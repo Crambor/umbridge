@@ -1,3 +1,3 @@
 #! /bin/bash
 
-./hq worker start &
+./hq worker start --resource "model=range(1-1)" &
