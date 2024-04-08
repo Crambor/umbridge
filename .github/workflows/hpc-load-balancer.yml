@@ -11,7 +11,7 @@ jobs:
 
   build-and-setup:
     runs-on: ubuntu-latest
-    container: ubuntu:latest
+    # container: ubuntu:latest
 
     steps:
       - name: Checkout
