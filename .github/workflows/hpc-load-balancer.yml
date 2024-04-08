@@ -38,7 +38,6 @@ jobs:
           ./hq --version
       - name: Build test server binary
         run: |
-<<<<<<< HEAD
           cd hpc
           make build-test-server
       - name: Run load-balancer binary
