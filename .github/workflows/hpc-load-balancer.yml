@@ -41,11 +41,10 @@ jobs:
         run: |
           cd hpc
           make build-test-server
-      - name: Run load-balancer binary
+      - name: Run load-balancer binary and client test
         run: |
           cd hpc
           cp test/*.sh hq_scripts/
           ./load-balancer &
-      - name: Run client evaluation
-        run: |
-          python3 ./hpc/test/MultiplyBy2/minimal-client.py
+          sleep 1
+          python3 test/MultiplyBy2/minimal-client.py
