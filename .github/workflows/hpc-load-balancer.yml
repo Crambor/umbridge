@@ -48,4 +48,4 @@ jobs:
           ./load-balancer &
       - name: Run client evaluation
         run: |
-          python3 ./hpc/test/MultiplyBy2/client.py
+          python3 ./hpc/test/MultiplyBy2/minimal-client.py
