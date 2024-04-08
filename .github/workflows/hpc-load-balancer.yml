@@ -48,4 +48,4 @@ jobs:
           cp test/*.sh hq_scripts/
           ./load-balancer &
           sleep 5
-          python3 test/MultiplyBy2/minimal-client.py
+          python3 test/MultiplyBy2/minimal-client.py 127.0.0.1
