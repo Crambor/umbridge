@@ -43,6 +43,7 @@ jobs:
           make build-test-server
       - name: Run load-balancer binary and client test
         run: |
+          mkdir /github/home/.hq-server
           cd hpc
           cp test/*.sh hq_scripts/
           ./load-balancer &
