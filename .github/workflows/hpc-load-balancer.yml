@@ -47,5 +47,5 @@ jobs:
           cd hpc
           cp test/*.sh hq_scripts/
           ./load-balancer &
-          sleep 1
+          sleep 5
           python3 test/MultiplyBy2/minimal-client.py
